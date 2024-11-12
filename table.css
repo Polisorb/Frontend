@@ -1,0 +1,35 @@
+table, th, td {
+    text-align: center;
+    padding: 7px;
+}
+th {
+    border-top: 5px solid #76c1c1;
+    background-color: #d6eeee;
+    color: white;
+}
+tr {
+    background-color:aliceblue;
+}
+table {
+    margin: 20px;
+    width: 1480px;
+}
+caption {
+    font-size: 26px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+tr:nth-child(3n+1)
+{
+    background-color: #76c1c1;
+}
+tr:nth-child(3n)
+{
+    background-color: #d6eeee
+}
+.win {
+    background-color: rgba(160, 239, 201, 0.611);
+}
+.nomination {
+    background-color: rgba(248, 171, 171, 0.596);
+}

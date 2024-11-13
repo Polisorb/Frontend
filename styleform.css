@@ -1,0 +1,47 @@
+.content_right1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 550px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #f2f2f2;
+}
+.content_left1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 550px;
+    height: 550px;
+    background-color: #ffd500;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+fieldset {
+    border-color: #00000000;
+}
+.content1 {
+    display: flex;
+    margin-left: 220px;
+}
+label, input, select {
+    font-size: 20px;
+    height: 30px;
+    cursor:pointer;
+}
+.radio {
+    height: 15px;
+    accent-color: #e5a400;
+}
+.button {
+    border: solid 3px #ffd50000;
+    background-color: #ffd500;
+    height: 45px;
+    width: 200px;
+    margin-left: 15px;
+}
+

@@ -2,17 +2,98 @@
 <html>
     <head>
         <title>Таблица</title>
-        <link rel = "stylesheet" href = "styles/style_lab3.css"/>
-        <link rel = "stylesheet" href = "styles/table.css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel = "stylesheet" href = "style.css"/>
+        <link rel = "stylesheet" href = "table.css"/>
+        <link rel = "stylesheet" href = "styleform.css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
+
     <body>
+        <form class = "header_indent" id = "addform">
+            <div class="content1">
+            <div class = "content_left1">
+                <img src = "https://play-lh.googleusercontent.com/d4_xNJPyGNnqjT-kOJd94sFt5gue-kMHuiro43j0qzc67yyMA0snuG3B7tI4oAWfS3Q" width="200px">
+                <h2>Обновление данных</h2>
+            </div>
+            <div class="content_right1">
+            <fieldset>
+                <label for = "premia"><b>Название премии</b></label>
+                <br>
+            <select id, name = "premia" required>
+                <option>Выберите название премии</option>
+                <option value="Оскар">Оскар</option>
+                <option value="Золотой глобус">Золотой глобус</option>
+                <option value="BAFTA">BAFTA</option>
+                <option value="Выбор критиков">Выбор критиков</option>
+                <option value="Независимый дух">Независимый дух</option>
+                <option value="Сатурн">Сатурн</option>
+                <option value="Спутник">Спутник</option>
+                <option value="Каннский кинофестиваль">Каннский кинофестиваль</option>
+            </select>
+            <br>
+            <br>
+            <label for = "year"><b>Год номинирования</b></label>
+            <br>
+            <input type = "number" min = 2024 id, name = "year" placeholder="Год" required>
+            <br>
+            <br>
+            <label for = "movie"><b>Название фильма</b></label>
+            <br>
+            <input id, name = "movie" placeholder="Название фильма" required>
+            <br>
+            <br>
+            <label for = "nomination"><b>Номинация</b></label>
+            <br>
+            <input id, name="nomination" placeholder="Номинация" required>
+            <br>
+            <br>
+            <label><b>Результат</b></label>
+            <br>
+            <input type = "radio" value = "Победа" class="radio" id="win" name="result">
+            <label for = "win">Победа</label>
+            <br>
+            <input type = "radio" value = "Номинация" class="radio" id = "lose" name="result">
+            <label for = "lose">Номинация</label>
+            <br>
+            <br>
+            <input type = "submit" value = "ОТПРАВИТЬ" class = "button">
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<script>   
+    function addRecord(form) {  
+    const table = document.querySelector("table");  
+    const newRow = table.insertRow(-1);  
+      
+    const premia = form.premia.value;  
+    const year = form.year.value;  
+    const movie = form.movie.value;  
+    const nomination = form.nomination.value;  
+    const result = form.result.value;  
+    newRow.insertCell(0).innerText = premia;  
+    newRow.insertCell(1).innerText = year;  
+    newRow.insertCell(2).innerText = movie;  
+    newRow.insertCell(3).innerText = nomination;  
+    newRow.insertCell(4).innerText = result; 
+    form.reset();  
+}  
+
+document.getElementById("addform").addEventListener("submit", function (e) {     
+    e.preventDefault();     
+    addRecord(e.target);     
+});     
+</script>
+
         <div class = "header">
-            <img src = "images/photo_2024-10-28_18-53-48.png" width = "100px">
+            <img src = "photo_2024-10-28_18-53-48.png" width = "100px">
             <h2><a href = "index.html" class="elements">ОСНОВНАЯ СТРАНИЦА</a>
             <a href = "page.html" class="elements">ПОЗИЦИОНИРОВАНИЕ ЭЛЕМЕНТОВ</a>
             <a href = "table.html" class="elements">ТАБЛИЦА</a></h2>
         </div>
-        <table class = "header_indent">
+        <table>
             <caption><b>Награды и номинации</b></caption>
             <tr>
                 <th>Премия</th>

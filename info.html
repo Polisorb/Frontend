@@ -1,0 +1,220 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Райан Гослинг</title>
+    <style>
+        h2{
+            margin-top: 15px;
+        }
+        body {
+            position: relative;
+        }
+        .fixed-left {
+            position: fixed;
+            top: 56px; 
+            left: 0;
+            height: 100%;
+            width: 200px;
+            overflow-y: auto;
+        }
+        .conteiner-fluid {
+            margin-left: 200px; 
+        }
+    </style>
+</head> 
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+        <div class="navbar-collapse collapse w-100 order-md-0"> 
+            <a class="navbar-brand" href="#!"></a>
+            <img src = "photo_2024-10-28_18-53-48.png"
+            class="rounded-pill"
+            width="100px">
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item mx-0">
+                <a class="nav-link text-white" href="info.html"><strong>Информация</strong></a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="films.html"><strong>Фильмы</strong></a>
+            </li>
+        </ul>
+    </nav>
+    
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-left">
+        <div class="container-fluid">
+            <ul class="navbar-nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#carousel">Карусель</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#films">Карточки с фильмами</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#biography">Краткая информация об актёре</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="carousel" class="conteiner-fluid text-white" style =" margin-top: 115px; background-color: #141414;">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img 
+                height="600px"
+                src="9b13feb4369c11f1ac59b3938825db11.jpg" 
+                class="d-block" 
+                style="margin: auto;">
+              </div>
+              <div class="carousel-item">
+                <img 
+                height="600px"
+                src="1660617583_29-kartinkin-net-p-raian-gosling-oboi-krasivo-33.jpg" 
+                class="d-block" 
+                style="margin: auto;">
+              </div>
+              <div class="carousel-item">
+                <img src="GettyImages-469335396.0.jpg"
+                height="600px"
+                class="d-block"
+                style="margin: auto;">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+    </div>
+
+    <div id="films" class="conteiner-fluid" style="padding: 50px 20px;">
+        <h1>Информация о фильмах</h1>
+      <div class="conteiner mt-3">
+        <div class="card img-fluid" style="padding: 15px; width: 100%;">
+            <img class="card-img-top"
+            src="8a4485c430c99e448520c541e56da985.jpg "
+            style="width: 100%;"
+            />
+            <div class="card-img-top">
+                <h2 class="card-title">Ла-Ла Ленд</h2>
+                <p class="card-text">
+                    Мюзикл рассказывает историю любви молодой актрисы Мии и джазового пианиста 
+            Себастьяна. Главная героиня на начальном этапе своей карьеры вынуждена подавать кинозвездам кофе и бегать по бесконечным 
+            прослушиваниям. Жизнь ее возлюбленного тоже складывается не лучшим образом: ему приходится играть на вечеринках в барах 
+            в ожидании более крупных предложений. Между главными героями возникает глубокое чувство, которое сталкивается с серьёзными 
+            испытаниями, так как у каждого из них возникает возможность осуществить свои мечты, но при этом требует жертв.
+                </p>
+                <a href="https://hd.kinopoisk.ru/film/4df03a8ddb64d11d99a2611bf39ac776" class="btn-primary">See more</a>
+            </div>
+        </div>
+      </div>
+      <div class="conteiner mt-3">
+        <div class="card img-fluid" style="padding: 15px; width: 100%;">
+            <img class="card-img-top"
+            src="blade-runner-2049-5bad5bc8751ae.jpg"
+            style="width: 100%;"
+            />
+            <div class="card-img-top">
+                <h2 class="card-title">Бегущий по лезвию 2049</h2>
+                <p class="card-text">
+                    Действие разворачивается в 2049 году, через 30 лет после событий фильма «Бегущий по лезвию». 
+                В том году человечество начинает исчерпывать природные ресурсы по всей Земле. Главный герой, полицейский-репликант Кей, 
+                случайно вскрывает старый секрет, способный нарушить существующий порядок, и вынужден разыскивать Рика Декарда, героя 
+                первого фильма.
+                </p>
+                <a href="https://www.kinopoisk.ru/film/3561/?utm_referrer=hd.kinopoisk.ru" class="btn-primary">See more</a>
+            </div>
+        </div>
+      </div>
+      <div class="conteiner mt-3">
+        <div class="card img-fluid" style="padding: 15px; width: 100%;">
+            <img class="card-img-top"
+            src="084a46860c6f2d2a612a666100493b52.jpg"
+            style="width: 100%;"
+            />
+            <div class="card-img-top">
+                <h2 class="card-title">Дневник памяти</h2>
+                <p class="card-text">
+                    Трогательная история любви, прочитанная пожилым мужчиной из старой записной книжки женщине 
+            в доме престарелых. В 1940 году дочь богатых аристократов Элли Гамильтон и сын бедного фермера Ной Калхун встретились на 
+            карнавале в Северной Каролине. Вскоре между молодыми людьми вспыхнула настоящая страсть, но родители девушки, а затем Вторая 
+            мировая война разлучили влюблённых. Ной ушёл воевать, Элли начала учиться в престижном колледже и работать в госпитале. 
+            Один из раненых полюбил симпатичную девушку, сделал ей предложение, но тут как раз закончилась война и в город вернулся Ной.
+                </p>
+                <a href="https://www.kinopoisk.ru/film/589290/" class="btn-primary">See more</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="biography" class="conteiner-fluid" style="padding: 50px 20px;">
+        <div class="conteiner mt-3">
+            <button
+                type="'button"
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#demo"
+                style="width: 150px; margin-bottom: 15px;"
+                >
+                Где родился
+            </button>
+            <div id="demo" class="collapse">
+                Гослинг родился и вырос в Канаде. Обрёл известность в 13 лет как ребёнок-актёр в программе телеканала Disney Channel «Клуб Микки Мауса» и появился в нескольких семейных передачах, в том числе «Боишься ли ты темноты?», «Мурашки» и «На волне успеха». Прорывом стала роль еврейского неонациста в фильме «Фанатик», а в романтической драме «Дневник памяти» Гослинг завоевал славу.
+            </div>
+          </div>
+          <div class="conteiner mt-3">
+            <button
+                type="'button"
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#demo"
+                style="width: 150px; margin-bottom: 15px;"
+                >
+                Личная жизнь
+            </button>
+            <div id="demo" class="collapse">
+                Райан ранее проживал в Нью-Йорке со своей собакой смешанной породы Джорджем. Он совладелец Tagine, марокканского ресторана в Беверли-Хиллз, Калифорния. Он купил ресторан импульсивно; он сказал, что потратил на него «все [свои] деньги», потратил год на ремонт сам и теперь следит за меню ресторана.
+
+Райан встречался с Сандрой Буллок, своей партнершей по фильму «Отсчет убийств», в периодом с 2002 по 2003 год. Затем у него были отношения со своей партнершей по фильму «Дневник памяти» Рэйчел Макадамс с 2005 по 2007 год, прежде чем они ненадолго воссоединились в 2008 году.
+
+Райан состоит в отношениях со своей партнершей по фильму «Место под соснами» Евой Мендес с сентября 2011 года. У пары есть две дочери, Эсмеральда и Амада: одна родилась в 2014 году, а вторая — в 2016-м. В 2022 году Райан тайно женился на Еве Мендес.
+
+Гослинг — вегетарианец и филантроп, поддерживает различные социальные инициативы. Он работал с PETA над кампанией, призванной побудить KFC и McDonald's использовать усовершенствованные методы забоя кур на своих заводах, а также над кампанией, призывающей молочных фермеров прекратить обрезание коров. Райан был волонтером в Билокси, штат Миссисипи, в 2005 году, в рамках усилий по ликвидации последствий урагана «Катрина». Он является сторонником Invisible Children, Inc., группы, которая повышает осведомленность о LRA в Центральной Африке. В 2005 году Райан побывал в лагерях беженцев Дарфура в Чаде. Он был докладчиком на Национальной конференции Campus Progress в 2008 году, где обсуждал Дарфур. В рамках своей работы в рамках Enough Project он посетил Уганду в 2007 году и восточное Конго в 2010 году.
+          </div>
+          </div>
+          <div class="conteiner mt-3">
+            <button
+                type="'button"
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#demo"
+                style="width: 150px; margin-bottom: 15px;"
+                >
+                Где учился
+            </button>
+
+            <div id="demo" class="collapse">
+                Райан Гослинг получил образование в государственной школе Гладстона, Корнуоллском колледже, профессиональном училище и средней школе Лестера Б. Пирсона.
+В возрасте 17 лет актёр бросил среднюю школу, чтобы сосредоточиться на актёрской карьере.
+            </div>
+          </div>
+    </div>
+</body>
+</html>
